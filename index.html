@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-js-modal@1.3.31/dist/index.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>P P P</h1>
+    </header>
+    <div class="botlist">
+        <div id="app">
+            <div class="bot">
+                <div class="container">
+                    <div class="card" v-on:click="openModal">
+                        <img src="img/pyke.jpg">
+                        <div class="card-text">
+                            <h2>LOL Custom Bot</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay" v-show="showContent" v-on:click="closeModal" v-cloak>
+                <div id="content">
+                    <div class="modalimage">
+                        <img src="img/cus.png">
+                    </div>
+                    <div class="modaldescription">
+                        <h3>使い方</h3>
+                        <p>接続しているボイスチャンネル内のメンバーを2グループに分けます。<br>
+                           ※ボイスチャンネルに接続した状態でコマンドを実行してください。
+                        </p>
+                        <table class="modaltable">
+                            <thead>
+                                <tr>
+                                    <th>コマンド</th>
+                                    <th>出力</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>!cus</td>
+                                    <td>name</td>
+                                </tr>
+                                <tr>
+                                    <td>!!cus</td>
+                                    <td>lane + name</td>
+                                </tr>
+                                <tr>
+                                    <td>!!!cus</td>
+                                    <td>champ + lane + name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>導入方法</h3>
+                        <a href="https://discordapp.com/oauth2/authorize?client_id=575692856178769951&permissions=0&scope=bot">ここをポチッとな</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot">
+            <div class="container">
+                <div class="card">
+                  <img src="img/discord.jpg">
+                  <div class="card-text">
+                    <h2>ライブコーディング(予定)</h2>
+                  </div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="bot">
+            <div class="container">
+                <div class="card">
+                  <img src="img/pyke.jpg">
+                  <div class="card-text">
+                    <h2>Custom Bot</h2>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bot">
+            <div class="container">
+                <div class="card">
+                  <img src="img/pyke.jpg">
+                  <div class="card-text">
+                    <h2>Custom Bot</h2>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <div id="particles-js"></div>
+    <script src="js/particles.js"></script>
+    <script src="js/set.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
