@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+html{
+  font-size: 62.5%;
+}
+
 body {
   background-color: #2c3e50;
   font-family: 'Raleway', Arial;
 }
 
 h1{
-  font-size:48px;
+  font-size:4.8rem;
   text-align: center;
   color:white;
   padding-top:70px;
@@ -20,6 +24,7 @@ h1{
 
 .botlist{
   width:900px;
+  max-width: 100%;
   padding-top:30px;
   margin: 0 auto;
   display: flex;
@@ -30,6 +35,7 @@ h1{
 .bot{
   display: inline-flexbox;
   width: 300px;
+  max-width: 100%;
   height: 300px;
   margin: 20px;
 }
@@ -84,7 +90,7 @@ h1{
     font-family: 'Raleway', Arial;
     text-align: center;
     padding-top:10px;
-    font-size: 25px;
+    font-size: 2.5rem;
     color:white;
   }
   
@@ -115,6 +121,7 @@ h1{
 #content{
   z-index:3;
   width:500px;
+  max-width: 100%;
   height:700px;
   padding: 1em;
   background:#fff;
@@ -127,8 +134,9 @@ h1{
 .modalimage{
   text-align: center;
   width: 100%;
+  max-width: 100%;
   img{
-    width:100%;
+    max-width:100%;
     height:350px;
   }
 }
@@ -137,6 +145,7 @@ h1{
   width: 100%;
   text-align: left;
   margin:20px 0;
+  font-size: 1.6rem;
   th{
     padding-bottom: 3px;
     padding-left:10px;
@@ -149,19 +158,16 @@ h1{
 
 .modaldescription{
   h3{
-  font-size: 25px;
+  font-size: 2.5rem;
   margin:15px 0;
   border-bottom: solid 2px #03A9F4;
   }
   p{
-    font-size:15px;
+    font-size:1.5rem;
   }
-}
-
-.modal-enter .modal-container,
-.modal-leave-active .modal-container {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  a{
+    font-size:1.6rem;
+  }
 }
 
 table th {
@@ -179,4 +185,45 @@ table td:not(:first-child) {
 
 table td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+
+
+@media screen and (max-width: 896px) {
+  .bot{
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+  }
+  .container{
+    width: 200px;
+    height: 235px;
+  }
+  .card {
+    width: 200px;
+   }
+
+  .card img{
+    width: 100%;
+    height: 200px;
+  }
+  .card-text{
+    font-size: 1.8rem;
+  }
+
+  #content{
+    z-index:3;
+    width:500px;
+    max-width: 100%;
+    height:auto;
+    padding: 1em;
+    background:#fff;
+  }
+  .modalimage{
+    img{
+      max-width:100%;
+      height:auto;
+    }
+  }
 }
